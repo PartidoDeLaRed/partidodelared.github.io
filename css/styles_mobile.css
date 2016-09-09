@@ -1,0 +1,41 @@
+@media (max-width: 1440px) {
+  .pad80{
+    padding: 60px;
+  }
+  .pad60{
+    padding: 30px;
+  }
+  .pad30{
+    padding: 5px;
+  }
+
+  separador.veinte{
+    padding: 15px 0;
+  }
+}
+@media (max-width: 1280px) {
+  .h1{
+    font-size: 60px;
+  }
+  .h2{
+    font-size: 40px;
+  }
+  .h3{
+    font-size: 20px;
+  }
+  .h4{
+    font-size: 15px;
+  }
+  .h5{
+    font-size: 12px;
+  }
+
+  separador.veinte{
+    padding: 10px 0;
+  }
+
+  .icono.icono-150{
+    width: 110px;
+    height: 110px;
+  }
+}
