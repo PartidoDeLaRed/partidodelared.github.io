@@ -868,7 +868,9 @@ a.fc-more:hover {
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
-	overflow: visible;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
 }
 
 .fc-day-grid-container {
@@ -920,7 +922,7 @@ a.fc-more:hover {
 .fc-basic-view td.fc-week-number span,
 .fc-basic-view td.fc-day-number {
 	padding: 5px 10px;
-	font-size: 20px;
+	font-size: 14px;
 }
 
 .fc-basic-view .fc-week-number {

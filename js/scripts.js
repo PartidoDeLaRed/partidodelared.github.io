@@ -25,8 +25,8 @@ $(document).ready(function() {
   CheckScroll();
   $(document).scroll(function(e) {
     CheckScroll();
-    var x = $(this).scrollTop();
-    $('.parallax-bk').css('background-position', parseInt(x / 6) + 'px')
+    var x = $(window).scrollTop();
+    $('.parallax-bk').css('background-position', 'center ' + (200 - parseInt(x / 6)) + 'px')
   });
 
   //Seteo de evento de resize
@@ -46,39 +46,36 @@ function ResizeBoxes() {
 }
 
 function CheckScroll() {
-  var wHeight = $(window).outerHeight();
-  if ($(window).scrollTop() > 0) {
-    if (!$('#header').hasClass('min')) {
-      $('#header').addClass('min');
-      clearInterval(time);
-    }
+  if ($(window).scrollTop() >= $()) {
+    clearInterval(time);
   } else {
-    if ($('#header').hasClass('min')) {
-      $('#header').removeClass('min');
-      time = setInterval(bounceVisionCiudad, 4000);
-    }
+    time = setInterval(bounceVisionCiudad, 4000);
   }
-  if ($(window).scrollTop() > ((wHeight / 2))) {
-    $('#header').addClass('no-first');
+  if ($(window).scrollTop() >= $(window).outerHeight()/10*9) {
+    $('#header').addClass('position-fixed');
+    if($('#portada').hasClass('height-almost-full'))
+      $('#portada').removeClass('height-almost-full').addClass('height-full');
   } else {
-    $('#header').removeClass('no-first');
+    $('#header').removeClass('position-fixed');
+    if($('#portada').hasClass('height-full'))
+      $('#portada').addClass('height-almost-full').removeClass('height-full');
   }
 }
 
 function bounceVisionCiudad() {
-  var delay = 0;
-  $('#visionciudad .columna').each(function(index, el) {
-    setTimeout(function() {
-      $(el).animate({
-        'margin-top': '-300px'
-      }, '500ms', function() {
-        $(el).animate({
-          'margin-top': '0'
-        }, '500ms')
-      });
-    }, delay);
-    delay += 1000;
-  });
+  // var delay = 0;
+  // $('#visionciudad .columna').each(function(index, el) {
+  //   setTimeout(function() {
+  //     $(el).animate({
+  //       'margin-top': '-300px'
+  //     }, '500ms', function() {
+  //       $(el).animate({
+  //         'margin-top': '0'
+  //       }, '500ms')
+  //     });
+  //   }, delay);
+  //   delay += 1000;
+  // });
 }
 
 function SetBackgrounds() {

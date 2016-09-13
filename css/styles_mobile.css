@@ -8,6 +8,15 @@
   .pad30{
     padding: 5px;
   }
+  .no-horizontal-pad{
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .no-vertical-pad{
+    padding-left: 0;
+    padding-right: 0;
+  }
+
 
   separador.veinte{
     padding: 15px 0;
