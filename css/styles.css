@@ -327,6 +327,8 @@ a {
 .title {
     font-size: 60px;
     line-height: 1.2em;
+    text-transform: uppercase;
+    font-weight: 600;
 }
 
 .bolder {
@@ -621,13 +623,15 @@ a {
     background-image: linear-gradient(to top, rgba(0,0,0,.5), transparent);
     border-bottom: 20px solid;
 }
+
 #redes > .columna.bk-color-fb:after {
-  background-image: linear-gradient(to top, #3b5998, transparent);
-  border-bottom-color: #3b5998;
+    background-image: linear-gradient(to top, #3b5998, transparent);
+    border-bottom-color: #3b5998;
 }
+
 #redes > .columna.bk-color-tw:after {
-  background-image: linear-gradient(to top, #1DA1F2, transparent);
-  border-bottom-color: #1DA1F2;
+    background-image: linear-gradient(to top, #1DA1F2, transparent);
+    border-bottom-color: #1DA1F2;
 }
 
 .position-absolute {
