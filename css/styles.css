@@ -573,6 +573,10 @@ a {
     border-radius: 8px;
 }
 
+.column-item div {
+    padding: 20px;
+}
+
 #visionciudad .columna>div .triangle {
     position: absolute;
     left: 0;
