@@ -41,7 +41,7 @@
 * {
     box-sizing: border-box;
     border-color: rgba(0,0,0,.5);
-    font-family: 'Titillium Web', sans-serif;
+    font-family: 'Raleway', sans-serif;
 }
 
 .wrapper {
@@ -151,8 +151,9 @@ section#portada {
     color: #fff;
 }
 
-section#equipo {
+section#equipo .title {
     color: #fff;
+    text-shadow: 0 2px 10px rgba(0,0,0,.7);
 }
 
 section .obliqueTitle {
