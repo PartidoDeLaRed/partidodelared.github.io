@@ -424,7 +424,7 @@ a {
 }
 
 .op-5 {
-    opacity: .5;
+    opacity: .7;
 }
 
 .pad10 {
@@ -600,6 +600,9 @@ a {
     border-bottom: 10px solid rgba(0,0,0,.3);
     padding: 40px;
     min-height: 190px;
+    background: rgba(255,255,255,.9) !important;
+    color: #222;
+    box-shadow: 0 2px 10px rgba(0,0,0,.8);
 }
 
 #equipo .list-item:hover {
