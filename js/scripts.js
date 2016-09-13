@@ -14,7 +14,7 @@ $(document).ready(function() {
   $('#equipo .list-item').each(function() {
     var el = $(this);
     var org = organizers.filter(function(o){ return o.name === el.data('comision')})[0];
-    el.css('background-color', org ? org.color : "#555555");
+    el.css('border-color', org ? org.color : "#555555");
   });
 
   //Seteo de calendario
