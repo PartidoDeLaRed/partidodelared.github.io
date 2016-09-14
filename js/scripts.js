@@ -54,7 +54,7 @@ $(document).ready(function() {
   $(document).scroll(function(e) {
     CheckScroll();
     var x = $(window).scrollTop();
-    $('.parallax-bk').css('background-position', 'center ' + (-($(window).outerHeight()/3) + parseInt(x / 6)) + 'px')
+    $('.parallax-bk').css('background-position', 'center ' + (-($(window).outerHeight()/2.2) + parseInt(x / 6)) + 'px')
   });
 
   //Seteo de evento de resize
