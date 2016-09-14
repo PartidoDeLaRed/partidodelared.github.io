@@ -1,6 +1,26 @@
 var time;
 $(document).ready(function() {
 
+  //Handler de menu
+  $('nav#menu li.menuitem, #header .logo').click(function(e) {
+    e.preventDefault();
+    var body = $("html, body");
+    var menuitem = $(e.currentTarget);
+    var section = $(this).data('section');
+    var pos = $('#' + section).offset().top;
+    body.stop().animate({
+        scrollTop: pos
+    }, '500', 'swing', function() {
+        document.location.href = document.location.origin + document.location.pathname + '#' + section;
+        body.stop().animate({
+            scrollTop: pos - $('#header').outerHeight() + 20
+        }, '500', 'swing');
+    });
+
+    $('.menuitem').removeClass('selected');
+    menuitem.addClass('selected');
+  });
+
   //Seteo de vision de ciudad
   var maxHeight = 0;
   $('#visionciudad .column-item').each(function() {
@@ -11,10 +31,18 @@ $(document).ready(function() {
   $('#visionciudad .column-item').height(maxHeight);
 
   //Seteo de equipo
-  $('#equipo .list-item').each(function() {
-    var el = $(this);
-    var org = organizers.filter(function(o){ return o.name === el.data('comision')})[0];
-    el.css('border-color', org ? org.color : "#555555");
+  shuffle(organizers).forEach(function(org) {
+    $('#equipoContenedor').append(
+      $('<div class="columna tercio pad20">'+
+        '<div class="list-item half-height horizontal-center vertical-center font-color-white" data-comision="'+org.name+'" style="border-color:'+org.color+'">'+
+          '<div>'+
+            '<div class="h2 bold all-caps">'+org.name+'</div>'+
+            '<separador class="diez"></separador>'+
+            '<div class="h4">'+org.description+'</div>'+
+          '</div>'+
+        '</div>'+
+      '</div>')
+    );
   });
 
   //Seteo de calendario
@@ -26,7 +54,7 @@ $(document).ready(function() {
   $(document).scroll(function(e) {
     CheckScroll();
     var x = $(window).scrollTop();
-    $('.parallax-bk').css('background-position', 'center ' + (200 - parseInt(x / 6)) + 'px')
+    $('.parallax-bk').css('background-position', 'center ' + (-($(window).outerHeight()/3) + parseInt(x / 6)) + 'px')
   });
 
   //Seteo de evento de resize
