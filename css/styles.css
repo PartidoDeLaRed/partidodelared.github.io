@@ -187,7 +187,6 @@ nav#menu .menuButton{
   width: 40px;
   height: 40px;
   border-radius: 3px;
-  background-color: rgba(0,0,0,.2);
   background-image: url(../img/menuIcon.png);
   background-size: 25px 25px;
   background-repeat: no-repeat;

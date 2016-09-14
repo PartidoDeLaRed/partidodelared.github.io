@@ -1276,17 +1276,55 @@ be a descendant of the grid when it is being dragged.
 	border-bottom-color: transparent;
 }
 
-
 @media (max-width: 600px) {
+	.fc-list-heading, .fc-list-item {
+	    padding: 0;
+	    border: none;
+	    height: 30px;
+	    display: flex;
+	    border-bottom: 1px solid rgba(255,255,255,1);
+	}
+	.fc-list-heading{
+		height: 40px;
+	}
+	.fc-widget-header, .fc-widget-content{
+		padding: 5px;
+		border: none !important;
+	}
+	.fc-widget-header{
+		padding: 10px;
+		background: rgba(0,0,0,.1);
+		font-weight: 600;
+		width: 100%;
+	}
+
+	.fc-list-item-time{
+		width: 45%;
+	}
+	.fc-list-item-marker{
+		padding: 0;
+	}
+	.fc-list-item-title{
+		width: 55%;
+		border-left: 1px solid #fff !important;
+	}
+
+	.fc-list-heading-alt{
+		float: left;
+		margin-right:10px;
+	}
+	.fc-list-heading-alt:after{
+		content: ',';
+	}
+
 	.fc-toolbar {
-    padding: 5px;
-    height: 3em;
+    padding: 10px;
+    height: 3.5em;
 	}
 
 	.fc-toolbar .fc-right, .fc-toolbar .fc-left{
 		max-width: 50%;
 		overflow: hidden;
-		float: none;
 		display: inline-block;
 	}
 
@@ -1302,8 +1340,11 @@ be a descendant of the grid when it is being dragged.
 	}
 
 	.fc .fc-toolbar > * > *{
-		float: none;
 		vertical-align: top;
-		margin-left: 2px;
+		margin-left: 0px;
+	}
+
+	.fc-today-button{
+		display: none;
 	}
 }

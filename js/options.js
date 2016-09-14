@@ -2,36 +2,21 @@ var calendarOptions = {
   lang: 'es',
   googleCalendarApiKey: 'AIzaSyDQa_Ok8Wf9QA4FPerldxq74vzi62ICUGw',
   events: 'partidodelared@gmail.com',
+  header: {
+    left:   'title',
+    center: '',
+    right:  'today prev,next'
+  },
   handleWindowResize: false,
-  headers: calendarHeaders,
-  views: calendarViews,
   eventClick: function(event) {
   },
   eventRender: function(event, element) {
     var org = organizers.filter(function(o){ return o.email == event.creator.email })[0];
-    $(element).css('background-color', org ? org.color : "#555555");
+    $(element).css('background-color', org ? org.color : "#555555").css('color', "#ffffff");
     if(event.title.indexOf('Asamblea') != -1)
       $(element).css('font-size', "16px").css('font-weight', "600").css('text-align', 'center');;
     $(element).attr('target', '_blank');
   }
-}
-var calendarHeaders = {
-    left:   'month,agendaWeek',
-    center: 'title',
-    right:  'today prev,next'
-}
-var calendarViews = {
-    agendaWeek: {
-        type: 'agenda',
-        duration: { days: 7 },
-        buttonText: 'Semana'
-    },
-    basicWeek: {
-        type: 'basic',
-        duration: {weeks: 2},
-        rows: 2,
-        buttonText: 'Dos Semanas'
-    }
 }
 
 var organizers = [

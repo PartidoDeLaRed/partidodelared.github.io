@@ -22,6 +22,11 @@ $(document).ready(function() {
 
     $('.menuitem').removeClass('selected');
     menuitem.addClass('selected');
+
+    if(mobile){
+      $('nav#menu .menuitem').animate({'height': '0px'}, 100);
+      menuOpened = !menuOpened;
+    }
   });
 
   var menuOpened = false;
@@ -59,10 +64,11 @@ $(document).ready(function() {
   });
 
   //Seteo de calendario
+  moment.locale("es");
   $('#calendar').fullCalendar(calendarOptions);
   setTimeout(function(){
     if(mobile)
-      $('#calendar').fullCalendar('changeView', 'agendaDay');
+      $('#calendar').fullCalendar('changeView', 'listMonth');
   }, 1000);
 
   //Seteo de evento de scroll
