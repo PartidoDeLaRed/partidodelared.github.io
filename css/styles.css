@@ -53,6 +53,15 @@ section {
   width: 100%;
   display: block;
   position: relative;
+  z-index: 1;
+}
+
+section#nuestrapropuesta {
+    z-index: 2;
+}
+
+section#visionciudad {
+    z-index: 2;
 }
 section> .bk.pdrfy::before {
   content: '';
@@ -126,6 +135,7 @@ section#header .button {
 }
 section#portada {
   color: #fff;
+  z-index: 2;
 }
 section#equipo .title {
   color: #fff;
