@@ -80,8 +80,9 @@ section .bk {
   z-index: 1;
 }
 section .bk.image {
-  background-position: center center;
+  background-position: top center;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 section .bk.image.repeat {
   background-repeat: repeat;
@@ -176,6 +177,21 @@ nav#menu .menuitem.selected {
   padding-bottom: 7px;
   padding-top: 7px;
   transition: all 200ms;
+}
+
+nav#menu .menuButton{
+  display: none;
+  position: absolute;
+  right: 7px;
+  top: -46px;
+  width: 40px;
+  height: 40px;
+  border-radius: 3px;
+  background-color: rgba(0,0,0,.2);
+  background-image: url(../img/menuIcon.png);
+  background-size: 25px 25px;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 
@@ -342,6 +358,9 @@ a {
 .height-almost-full_comp {
   height: 10%;
 }
+.no-width {
+  width: 0px;
+}
 .width-full {
   width: 100%;
 }
@@ -415,8 +434,9 @@ a {
   border-style: solid;
   border-width: 0;
   border-bottom-width: 2px;
-  padding: 1em 2em 1em 2em !important;
+  padding: 1em 2em 1em 2em;
   cursor: pointer;
+  overflow: hidden;
 }
 .button.circle {
   width: 80px;
@@ -457,6 +477,12 @@ a {
   padding-top: 10px;
   padding-bottom: 10px;
 }
+.button.no-width {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+
 .icono {
   background-position: center center;
   background-repeat: no-repeat;

@@ -1275,3 +1275,35 @@ be a descendant of the grid when it is being dragged.
 	border-top-color: transparent;
 	border-bottom-color: transparent;
 }
+
+
+@media (max-width: 600px) {
+	.fc-toolbar {
+    padding: 5px;
+    height: 3em;
+	}
+
+	.fc-toolbar .fc-right, .fc-toolbar .fc-left{
+		max-width: 50%;
+		overflow: hidden;
+		float: none;
+		display: inline-block;
+	}
+
+	.fc-toolbar .fc-center,.fc-toolbar .fc-clear{
+		display: none;
+	}
+
+	h2{
+		font-size: 16px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+	}
+
+	.fc .fc-toolbar > * > *{
+		float: none;
+		vertical-align: top;
+		margin-left: 2px;
+	}
+}

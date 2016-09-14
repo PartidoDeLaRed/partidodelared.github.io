@@ -1,6 +1,9 @@
 var time;
 $(document).ready(function() {
 
+  var wWidth = $(window).outerWidth();
+  var mobile = wWidth < 600 ? true : false;
+
   //Handler de menu
   $('nav#menu li.menuitem, #header .logo').click(function(e) {
     e.preventDefault();
@@ -20,6 +23,16 @@ $(document).ready(function() {
     $('.menuitem').removeClass('selected');
     menuitem.addClass('selected');
   });
+
+  var menuOpened = false;
+  $('.menuButton').click(function(event) {
+    if(!menuOpened)
+      $('nav#menu .menuitem').animate({'height': '48px'}, 100);
+    else
+      $('nav#menu .menuitem').animate({'height': '0px'}, 100);
+    menuOpened = !menuOpened;
+  });
+
 
   //Seteo de vision de ciudad
   var maxHeight = 0;
@@ -47,6 +60,10 @@ $(document).ready(function() {
 
   //Seteo de calendario
   $('#calendar').fullCalendar(calendarOptions);
+  setTimeout(function(){
+    if(mobile)
+      $('#calendar').fullCalendar('changeView', 'agendaDay');
+  }, 1000);
 
   //Seteo de evento de scroll
   time = setInterval(bounceVisionCiudad, 4000);
@@ -54,7 +71,7 @@ $(document).ready(function() {
   $(document).scroll(function(e) {
     CheckScroll();
     var x = $(window).scrollTop();
-    $('.parallax-bk').css('background-position', 'center ' + (-($(window).outerHeight()/2.2) + parseInt(x / 6)) + 'px')
+    //$('.parallax-bk').css('background-position', 'center ' + (-($(window).outerHeight()/2.2) + parseInt(x / 6)) + 'px')
   });
 
   //Seteo de evento de resize
@@ -81,10 +98,12 @@ function CheckScroll() {
   }
   if ($(window).scrollTop() >= $(window).outerHeight()/10*9) {
     $('#header').addClass('position-fixed');
+    $('nav#menu .button').removeClass('no-width');
     if($('#portada').hasClass('height-almost-full'))
       $('#portada').removeClass('height-almost-full').addClass('height-full');
   } else {
     $('#header').removeClass('position-fixed');
+    $('nav#menu .button').addClass('no-width');
     if($('#portada').hasClass('height-full'))
       $('#portada').addClass('height-almost-full').removeClass('height-full');
   }

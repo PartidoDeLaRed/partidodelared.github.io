@@ -48,3 +48,96 @@
     height: 110px;
   }
 }
+
+@media (max-width: 600px) {
+
+  section#header> .logo{
+    width: 120px
+  }
+
+  nav#menu{
+    display:block;
+    background-color: #eee;
+    position: absolute;
+    width:100%;
+    height: auto;
+    top: 100%;
+    padding:0;
+    box-shadow: 0 1px 3px rgba(0,0,0,.2);
+  }
+
+  nav#menu .menuButton{
+    display: block;
+  }
+
+  nav#menu .menuitem {
+    margin-right: 0px;
+    color: #222;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+    padding: 0;
+    font-size: 15px;
+    height: 100%;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+    overflow: hidden;
+    height: 0;
+  }
+
+  nav#menu .menuitem.selected {
+    padding: 15px;
+    font-weight:bold;
+  }
+
+  nav#menu .button{
+    display: none;
+  }
+  .columna{
+    width: 100% !important;
+    display: block;
+  }
+
+  .pad80{
+    padding: 40px 10px;
+  }
+  .pad60{
+    padding: 10px;
+  }
+  .pad30{
+    padding: 10px;
+  }
+  .pad20{
+    padding: 10px;
+  }
+
+  .h1{
+    font-size: 30px
+  }
+  .title{
+    font-size: 45px
+  }
+
+  .column-item div{
+    padding: 10px
+  }
+
+  #visionciudad .columna>div .triangle{
+    display: none;
+  }
+
+  section .obliqueTitle {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: auto;
+    margin-left: 0px;
+    font-size: 40px;
+    text-align: center;
+    background: none;
+    padding: 30px;
+    border-radius: 0;
+    box-shadow: none;
+    transform: rotate3d(0,0,0,0);
+    z-index: 2;
+  }
+}
