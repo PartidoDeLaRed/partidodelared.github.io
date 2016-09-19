@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: comision
 title: About
 permalink: /about/
 ---
