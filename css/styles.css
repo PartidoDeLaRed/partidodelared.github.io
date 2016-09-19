@@ -89,7 +89,7 @@ section .bk {
   z-index: 1;
 }
 section .bk.image {
-  background-position: top center;
+  background-position: center -40px;
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
@@ -171,23 +171,13 @@ nav#menu .menuitem {
   text-transform: uppercase;
   cursor: pointer;
   transition: all 200ms;
-  border-top: 0px solid #fff;
-  border-bottom: 0px solid #fff;
+  border: none;
 }
 nav#menu .menuitem:hover {
-  border-top-width: 3px;
-  border-bottom-width: 3px;
-  padding-bottom: 7px;
-  padding-top: 7px;
+  box-shadow: inset 0 -5px #fff;
   transition: all 200ms;
 }
-nav#menu .menuitem.selected {
-  border-top-width: 3px;
-  border-bottom-width: 3px;
-  padding-bottom: 7px;
-  padding-top: 7px;
-  transition: all 200ms;
-}
+nav#menu .menuitem.selected {box-shadow: inset 0 -5px #fff;transition: all 200ms;}
 
 nav#menu .menuButton{
   display: none;
@@ -408,7 +398,7 @@ a {
   opacity: .1;
 }
 .op-5 {
-  opacity: .7;
+  opacity: .3;
 }
 .pad10 {
   padding: 10px;
@@ -442,10 +432,10 @@ a {
   display: inline-block;
   border-style: solid;
   border-width: 0;
-  border-bottom-width: 2px;
   padding: 1em 2em 1em 2em;
   cursor: pointer;
   overflow: hidden;
+  transition: all 200ms;
 }
 .button.circle {
   width: 80px;
@@ -470,11 +460,7 @@ a {
   background-image: url(../img/left-arrow.png);
   background-position-x: 15px;
 }
-.button:hover {
-  border-bottom-width: 4px;
-  margin-bottom: -2px;
-  top: -2px;
-}
+.button:hover {box-shadow: inset 0 -3px rgba(0,0,0,.5);margin-top: -3px;margin-bottom: 3px;transition: all 200ms;}
 .button:active {
   border-top-width: 4px;
   border-bottom-width: 1px;
@@ -623,7 +609,7 @@ a {
 }
 .post .image {
   height: 160px;
-  background-position: center top;
+  background-position: center CENTER;
 }
 .post .image.none {
   height: 0px;
@@ -691,10 +677,11 @@ a {
 .userCont .userDisplayName {
   font-size: 15px;
   font-weight: 600;
+  margin-top: 3px;
 }
 .userCont .userName {
   font-size: 12px;
-  margin-top: -5px;
+  margin-top: 0px;
 }
 #eventsContainer {
   position: relative;
