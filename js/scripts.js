@@ -5,7 +5,7 @@ $(document).ready(function() {
   var mobile = wWidth < 600 ? true : false;
 
   //Handler de menu
-  $('nav#menu li.menuitem, #header .logo').click(function(e) {
+  $('nav#menu li.menuitem, #header.root .logo').click(function(e) {
     e.preventDefault();
     var body = $("html, body");
     var menuitem = $(e.currentTarget);
@@ -16,7 +16,7 @@ $(document).ready(function() {
     }, '500', 'swing', function() {
         document.location.href = document.location.origin + document.location.pathname + '#' + section;
         body.stop().animate({
-            scrollTop: pos - $('#header').outerHeight() + 20
+            scrollTop: pos - $('#header.root').outerHeight() + 20
         }, '500', 'swing');
     });
 
@@ -103,13 +103,13 @@ function CheckScroll() {
     time = setInterval(bounceVisionCiudad, 4000);
   }
   if ($(window).scrollTop() >= $(window).outerHeight()/10*9) {
-    $('#header').addClass('position-fixed');
-    $('nav#menu .button').removeClass('no-width');
+    $('#header.root').addClass('position-fixed');
+    $('#header.root nav#menu .button').removeClass('no-width');
     if($('#portada').hasClass('height-almost-full'))
       $('#portada').removeClass('height-almost-full').addClass('height-full');
   } else {
-    $('#header').removeClass('position-fixed');
-    $('nav#menu .button').addClass('no-width');
+    $('#header.root').removeClass('position-fixed');
+    $('#header.root nav#menu .button').addClass('no-width');
     if($('#portada').hasClass('height-full'))
       $('#portada').addClass('height-almost-full').removeClass('height-full');
   }

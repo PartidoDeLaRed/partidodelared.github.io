@@ -4,9 +4,13 @@
   {% include head.html %}
 
 <body>
-
-  {% include header.html %}
-  {{ content }}
+  {% include headerPagina.html title=page.title %}
+  <div class="pad80 text-center bk-color-gray3">
+    <separador class="veinte"></separador>
+    <div class="wrapper">
+      {{ content }}
+    </div>
+  </div>
   {% include footer.html %}
   {% include scripts.html %}
 
