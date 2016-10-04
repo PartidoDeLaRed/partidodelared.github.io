@@ -1,6 +1,8 @@
 ---
 layout: comision
-title: Territorio | Partido de la Red
+title: Territorio
+categories: comisiones
+published: true
 permalink: /comisiones/territorio
 ---
 
