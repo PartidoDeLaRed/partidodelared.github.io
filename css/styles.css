@@ -242,7 +242,7 @@ separador.diez {
   color: #333333;
 }
 .bk-color-gray3 {
-  background-color: #c7d5df;
+  background-color: #d9e1e6;
   color: #333333;
 }
 .bk-color-gray4 {
@@ -257,15 +257,15 @@ separador.diez {
   box-shadow: inset 5px 0px 15px rgba(0, 0, 0, .4);
 }
 .bk-color-sustentable {
-  background-color: #56AB56;
+  background-color: #67b367;
   color: #eee;
 }
 .bk-color-abierta {
-  background-color: #CE794E;
+  background-color: #d3865f;
   color: #eee;
 }
 .bk-color-comoderecho {
-  background-color: #CF507A;
+  background-color: #d46187;
   color: #eee;
 }
 .bk-color-fb {
@@ -400,6 +400,9 @@ a {
 .op-5 {
   opacity: .3;
 }
+.pad5 {
+  padding: 5px;
+}
 .pad10 {
   padding: 10px;
 }
@@ -518,19 +521,37 @@ a {
 .icono.corazon {
   background-image: url(../img/heartIcon.png);
 }
+
+.list-container{
+  background: rgba(255,255,255,.2);
+  padding: 10px 0px 60px 0px !important;
+}
+
 #visionciudad .list-item {
-  margin: 10px 0;
-  background-color: rgba(255, 255, 255, .1);
-  border-radius: 3px;
+  margin: 20px 0;
+  color: #fff;
+  font-weight: 600;
+  text-align: left;
+  border-bottom: 3px solid rgba(0,0,0,.05);
+  padding: 0 30px 20px;
 }
 #visionciudad .columna>div {
   position: relative;
   z-index: 10;
-  border-radius: 8px;
+  border-radius: 0;
 }
 .column-item div {
   padding: 20px;
 }
+.column-item .button{
+  width: 100%;
+  margin: 20px 0 0 0;
+  position: absolute;
+  left: 0;
+  bottom: 20px;
+  border-radius: 0;
+}
+
 #visionciudad .columna>div .triangle {
   position: absolute;
   left: 0;
@@ -602,10 +623,11 @@ a {
 }
 .post {
   text-align: left;
-  border: 2px solid rgba(0, 0, 0, .1);
+  border: 4px solid rgba(0, 0, 0, .4);
   padding-top: 0;
   background-color: rgba(0, 0, 0, .3);
-  margin: 4px 2px;
+  margin: 0;
+  position: relative;
 }
 .post .image {
   height: 160px;
@@ -617,10 +639,45 @@ a {
 .post .time {
   background-color: rgba(0, 0, 0, .1);
   padding: 0 0 0 10px;
-  display: inline-block;
+  position: absolute;
+  top: 0;
+  display: block;
+  opacity: 0;
   width: 100%;
   line-height: 30px;
 }
+
+.post .time{
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(0,0,0,.6);
+}
+.post .time a {
+  display: block;
+  margin-left: 10px;
+}
+
+#facebookFeed .post .time{
+  height: 160px;
+  align-items: center;
+  justify-content: center;
+}
+#twitterFeed .post .time{
+  height: 40px;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+#facebookFeed .post .time .link {
+  width: 100%;
+}
+
+.post:hover  .time{
+  opacity: 1;
+  transition: all 200ms;
+}
+
 .post .text {
   overflow: hidden;
   text-overflow: ellipsis;
@@ -636,29 +693,28 @@ a {
   white-space: nowrap;
   text-overflow: ellipsis;
   overflow: hidden;
-  max-width: 100%;
-  vertical-align: bottom
+  width: 25px;
+  height: 26px;
+  vertical-align: bottom;
 }
 .post .time a {
   float: right;
-  margin: 0;
+  margin: 0 5px 0 10px;
   padding: 0;
   border: none;
 }
 .post .time .link {
   position: relative;
-  color: #fff;
-  background: rgba(255, 255, 255, .2);
-  padding: 5px 10px 5px 30px;
-  line-height: 20px;
+  color: #000;
+  font-weight: 700;
 }
 .post .time .link:before {
   content: '';
   position: absolute;
-  left: 8px;
-  top: 8px;
-  width: 15px;
-  height: 15px;
+  left: 0;
+  top: 0;
+  width: 25px;
+  height: 25px;
   background-image: url(../img/linkIcon.png);
   background-size: contain;
 }

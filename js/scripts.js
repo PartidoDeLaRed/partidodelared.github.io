@@ -41,12 +41,12 @@ $(document).ready(function() {
 
   //Seteo de vision de ciudad
   var maxHeight = 0;
-  $('#visionciudad .column-item').each(function() {
+  $('#visionciudad .list-container').each(function() {
     if ($(this).height() > maxHeight) {
       maxHeight = $(this).height();
     }
   });
-  $('#visionciudad .column-item').height(maxHeight);
+  $('#visionciudad .list-container').height(maxHeight);
 
   //Seteo de equipo
   shuffle(organizers).forEach(function(org) {
