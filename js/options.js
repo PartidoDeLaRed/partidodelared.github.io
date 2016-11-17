@@ -22,13 +22,13 @@ var calendarOptions = {
 var organizers = [
   {
     name: "organización",
-    description: "Si nos organizamos….. votamos todos. ¿Qué día era la asamblea? ¿Dónde es la fiesta? ¿Cómo hago para….? ¿Dónde me conviene sumarme a aportar al PdR? Todo esto y menos hacemos en organización.",
+    description: "Si nos organizamos….. votamos todos. ¿Qué día era la asamblea? ¿Dónde es la fiesta? ¿Cómo hago para….? Todo esto y menos hacemos en organización.",
     email: "partidodelared@gmail.com",
     color: "#169CBF"
   },
   {
     name: "plataformas",
-    description: "00010001 0111101. Codeamos soluciones y desencriptamos problemas. que proponen concesionopoly (urls) y enterate. Traducimos las ideas del partido en realidad, todo con una pizca de amor.",
+    description: "Codeamos soluciones y desencriptamos problemas. Entrá a <a href='http://queproponen.com.ar' target='_blank'>¿Qué proponen?</a> o <a href='http://concesionopoly.com.ar' target='_blank'>Concesionopoly</a> y enterate. Todo con una pizca de amor.",
     email: "plataformas@partidodelared.org",
     color: "#EA4040"
   },

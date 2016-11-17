@@ -56,7 +56,7 @@ $(document).ready(function() {
           '<div>'+
             '<div class="h2 bold all-caps">'+org.name+'</div>'+
             '<separador class="diez"></separador>'+
-            '<div class="h4">'+org.description+'</div>'+
+            '<div class="h5">'+org.description+'</div>'+
           '</div>'+
         '</div>'+
       '</div>')

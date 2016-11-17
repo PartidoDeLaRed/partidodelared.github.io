@@ -464,6 +464,7 @@ temporary rendered events).
 	position: relative;
 	z-index: 4;
 	padding-bottom: 2px; /* matches the space above the events */
+	min-height: 100px;
 }
 
 .fc-row .fc-helper-skeleton {

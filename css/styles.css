@@ -310,16 +310,16 @@ a {
   font-size: 16px;
 }
 .h5 {
-  font-size: 12px;
+  font-size: 14px;
 }
 .hand {
   font-family: 'Bad Script', sans-serif;
 }
 .title {
-  font-size: 60px;
-  line-height: 1.2em;
+  font-size: 50px;
+  line-height: 1.5em;
   text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 800;
 }
 .bolder {
   font-weight: 900;
@@ -399,6 +399,12 @@ a {
 }
 .op-5 {
   opacity: .3;
+}
+.op-8 {
+  opacity: .8;
+}
+.blur {
+  filter: blur(7px);
 }
 .pad5 {
   padding: 5px;
@@ -573,7 +579,7 @@ a {
   cursor: pointer;
   border-radius: 4px;
   border-bottom: 10px solid rgba(0, 0, 0, .3);
-  padding: 40px;
+  padding: 40px 20px;
   min-height: 190px;
   background: rgba(255, 255, 255, .9) !important;
   color: #222;
