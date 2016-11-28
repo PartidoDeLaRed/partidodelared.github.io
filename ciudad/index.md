@@ -1,6 +1,13 @@
-<section id="visionciudad" class="pad80 text-center bk-color-gray3 animated">
+---
+layout: ciudad
+title: Nuestra Ciudad
+categories: ciudad
+permalink: /ciudad/
+---
+
+<section id="visionciudad" class="pad80 text-center bk-color-gray3">
   <div class="wrapper">
-    <div class="title">Nuestra Ciudad</div>
+    <div class="title">NUESTRA CIUDAD</div>
     <separador class="veinte"></separador>
     <div class="columna pad5 tercio horizontal-center">
       <div class="column-item sustentable text-center bk-color-sustentable">

@@ -55,6 +55,9 @@ section {
   position: relative;
   z-index: 1;
 }
+section.rounded {
+  border-radius: 10px;
+}
 
 section#nuestrapropuesta {
     z-index: 2;
@@ -318,7 +321,6 @@ a {
 .title {
   font-size: 50px;
   line-height: 1.5em;
-  text-transform: uppercase;
   font-weight: 800;
 }
 .bolder {
@@ -475,6 +477,7 @@ a {
   border-bottom-width: 1px;
   border-bottom-color: rgba(255, 255, 255, .6);
   margin-bottom: 1px;
+  box-shadow: none;
   top: 4px;
 }
 .button.mini {
@@ -531,6 +534,7 @@ a {
 .list-container{
   background: rgba(255,255,255,.2);
   padding: 10px 0px 60px 0px !important;
+  position: relative;
 }
 
 #visionciudad .list-item {
@@ -554,8 +558,11 @@ a {
   margin: 20px 0 0 0;
   position: absolute;
   left: 0;
-  bottom: 20px;
+  bottom: 0px;
   border-radius: 0;
+}
+.column-item .button:active{
+  top: auto;
 }
 
 #visionciudad .columna>div .triangle {

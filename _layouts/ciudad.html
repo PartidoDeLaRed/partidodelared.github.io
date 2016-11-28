@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {% include head.html %}
+
+<body>
+  {% include headerPagina.html %}
+  <div class="pad80 text-center bk-color-gray3">
+    <separador class="veinte"></separador>
+    <div class="wrapper">
+      <separador class="diez"></separador>
+      {{ content }}
+      <separador class="diez"></separador>
+    </div>
+  </div>
+  {% include footer.html %}
+  {% include scripts.html %}
+
+</body>
+
+</html>
