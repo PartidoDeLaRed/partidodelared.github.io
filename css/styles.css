@@ -597,6 +597,11 @@ a {
   animation: girito 1s ease-in-out both infinite;
   transform: translate3d(0, 0, 0);
 }
+#equipo .list-item a {
+  color: #3b5998;
+  text-decoration: underline;
+}
+
 #redes> .columna {
   padding-top: 100px;
   overflow: hidden;
