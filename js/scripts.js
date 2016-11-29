@@ -68,7 +68,10 @@ $(document).ready(function() {
   $('#calendar').fullCalendar(calendarOptions);
   setTimeout(function(){
     if(mobile)
+    {
+      $('.meetup').remove();
       $('#calendar').fullCalendar('changeView', 'listMonth');
+    }
   }, 1000);
 
   //Seteo de evento de scroll
