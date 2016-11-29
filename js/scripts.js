@@ -54,7 +54,7 @@ $(document).ready(function() {
       $('<div class="columna tercio pad20">'+
         '<div class="list-item half-height horizontal-center vertical-center font-color-white" data-comision="'+org.name+'" style="border-color:'+org.color+'">'+
           '<div>'+
-            '<div class="h2 bold all-caps">'+org.name+'</div>'+
+            '<div class="h2 bold all-caps">'+org.displayName+'</div>'+
             '<separador class="diez"></separador>'+
             '<div class="h5">'+org.description+'</div>'+
           '</div>'+
