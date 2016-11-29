@@ -46,7 +46,7 @@ var organizers = [
   },
   {
     name: "financiamiento",
-    description: "<strike>Monsanto, Barrick Gold, IBM, Google.</strike> NO, nos autofinanciamos como podemos y como queremos para que nadie nos venga a pedir nada después, porque nuestro voto es nuestro.",
+    description: "<strike>Monsanto, Barrick Gold, IBM, Google</strike>. NO, nos autofinanciamos pensando en crowdfunding, favoreciendo el contacto con otra organizaciones, impulsando la transparencia y a favor de cambios en la ley que hable de un voto y no un secreto.",
     email: "financiamiento@partidodelared.org",
     color: "#FF9800"
   },
@@ -64,7 +64,7 @@ var organizers = [
   },
   {
     name: "arte",
-    description: "",
+    description: "Espacio donde se buscan intervenciones de toda indole mientras exploramos ideas sobre las relaciones de lo artistico y lo politico.",
     email: "arte@partidodelared.org",
     color: "#169CBF"
   },

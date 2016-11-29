@@ -47,7 +47,7 @@ permalink: /ciudad/
       <div class="column-item comoderecho text-center bk-color-comoderecho">
         <div class="h3 pad20">
           <div class="icono icono-100 comoderecho mar10"></div>
-          <div class="h2 bold pad10 no-horizontal-pad">INCLUSIVA</div>
+          <div class="h2 bold pad10 no-horizontal-pad">INTEGRADORA</div>
         </div>
         <div class="list-container">
           <div class="h4 list-item pad20">La ciudad tiene, ante todo, una función social</div>
@@ -56,7 +56,7 @@ permalink: /ciudad/
           <div class="h4 list-item pad20">La Ciudad necesita una Revolución Educativa</div>
           <div class="h4 list-item pad20">La Ciudad está para curar</div>
   
-          <a href="/ciudad/inclusiva"><div class="button h4 bold pad30 bk-color-2">Conocer más</div></a>
+          <a href="/ciudad/integradora"><div class="button h4 bold pad30 bk-color-2">Conocer más</div></a>
         </div>
         <separador class="diez"></separador>
       </div>
