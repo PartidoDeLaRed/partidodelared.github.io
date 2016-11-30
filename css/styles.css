@@ -145,6 +145,25 @@ section#equipo .title {
   color: #fff;
   text-shadow: 0 2px 10px rgba(0, 0, 0, .7);
 }
+
+section#footer * {
+    cursor: default;
+}
+.withLove {
+    display: inline-block;
+    width: 0;
+    overflow: hidden;
+    vertical-align: middle;
+    white-space: nowrap;
+    opacity: 0;
+    transition: width 500ms ease-in-out, opacity 400ms ease-out;
+}
+section#footer > .width-full:hover > .withLove {
+    width: 51.64px;
+    opacity: 1;
+    transition: width 500ms ease-in-out, opacity 800ms ease-in;
+}
+
 section .obliqueTitle {
   position: absolute;
   top: 60px;
