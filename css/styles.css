@@ -332,7 +332,7 @@ a {
   color: #fff;
 }
 .h1 {
-  font-size: 50px;
+  font-size: 40px;
   line-height: 1.2em;
 }
 .h2 {
@@ -355,6 +355,7 @@ a {
   font-size: 50px;
   line-height: 1.5em;
   font-weight: 800;
+  text-transform: uppercase;
 }
 .bolder {
   font-weight: 900;
