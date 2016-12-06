@@ -262,7 +262,7 @@ separador.diez {
 }
 .bk-color-gray1 {
   background-color: #87959f;
-  color: #333333;
+  color: #ffffff;
 }
 .bk-color-gray2 {
   background-color: #a7b5bf;
@@ -397,14 +397,27 @@ a {
   display: flex;
   align-items: center;
 }
+.vertical-top {
+  display: flex;
+  align-items: top;
+}
+.vertical-bottom {
+  display: flex;
+  align-items: bottom;
+}
 .horizontal-center {
   display: flex;
   justify-content: space-around;
   text-align: center;
 }
+
 .display-inline {
   display: inline-block;
 }
+.display-flex {
+  display: flex;
+}
+
 .columna {
   display: inline-block;
   vertical-align: top;
@@ -433,6 +446,17 @@ a {
 .blur {
   filter: blur(7px);
 }
+
+.box-shadow-light{
+  box-shadow: 0 5px 20px rgba(0,0,0,.3);
+}
+.box-shadow-medium{
+  box-shadow: 0 5px 12px rgba(0,0,0,.5);
+}
+.box-shadow-dark{
+  box-shadow: 0 5px 5px rgba(0,0,0,.8);
+}
+
 .pad5 {
   padding: 5px;
 }
@@ -453,6 +477,9 @@ a {
 }
 .mar10 {
   margin: 10px;
+}
+.mar20 {
+  margin: 20px;
 }
 .no-vertical-pad {
   padding-top: 0;
@@ -496,7 +523,10 @@ a {
   background-image: url(../img/left-arrow.png);
   background-position-x: 15px;
 }
-.button:hover {box-shadow: inset 0 -3px rgba(0,0,0,.5);margin-top: -3px;margin-bottom: 3px;transition: all 200ms;}
+.button:hover {
+  box-shadow: inset 0 -5px rgba(0,0,0,.5);
+  transition: all 400ms ease-out;
+}
 .button:active {
   border-top-width: 4px;
   border-bottom-width: 1px;
@@ -508,6 +538,10 @@ a {
 .button.mini {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+.button.mini:hover {
+  box-shadow: inset 0 -3px rgba(0,0,0,.5);
+  transition: all 300ms ease-out;
 }
 .button.no-width {
   padding-left: 0;

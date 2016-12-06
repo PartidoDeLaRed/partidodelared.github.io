@@ -21,6 +21,15 @@
   separador.veinte{
     padding: 15px 0;
   }
+
+  #menu .button.mini {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .position-fixed #menu .button.mini {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 @media (max-width: 1280px) {
   .h1{
