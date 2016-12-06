@@ -134,7 +134,11 @@
     padding: 10px;
   }
   .pad20{
-    padding: 10px;
+    padding: 0;
+  }
+
+  #redes> .columna{
+    padding-top: 20px
   }
 
   .h1{
@@ -142,6 +146,13 @@
   }
   .title{
     font-size: 45px
+  }
+
+  .text-right {
+    text-align: center;
+  }
+  .text-left {
+    text-align: center;
   }
 
   .column-item div{
