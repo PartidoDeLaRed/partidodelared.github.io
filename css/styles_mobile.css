@@ -6,15 +6,18 @@
     padding: 30px;
   }
   .pad30{
-    padding: 5px;
+    padding: 15px;
+  }
+  .pad20{
+    padding: 10px;
   }
   .no-horizontal-pad{
     padding-left: 0;
     padding-right: 0;
   }
   .no-vertical-pad{
-    padding-left: 0;
-    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 
 
@@ -33,7 +36,7 @@
 }
 @media (max-width: 1280px) {
   .h1{
-    font-size: 40px;
+    font-size: 35px;
   }
   .h2{
     font-size: 25px;
