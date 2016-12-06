@@ -48,6 +48,7 @@ html, body {
   top: 0;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 section {
   width: 100%;
