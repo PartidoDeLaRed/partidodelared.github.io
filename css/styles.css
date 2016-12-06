@@ -59,7 +59,6 @@ section {
 
 section.position-fixed {
     overflow: hidden;
-    height: auto;
 }
 section.rounded {
   border-radius: 10px;
