@@ -67,6 +67,10 @@
     height: 50px;
   }
 
+  section#portada {
+    height: calc(100% - 50px);
+  }
+
   section#header> .logo{
     width: 140px;
     margin-left: -10px;
