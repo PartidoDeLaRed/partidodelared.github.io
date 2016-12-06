@@ -137,6 +137,7 @@ section#header {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 76px;
 }
 section#header .logo {
   height: 60px;
@@ -409,6 +410,7 @@ a:not[.linkButton]:hover {
 }
 .height-almost-full {
   height: 90%;
+  height: calc(100% - 76px);
 }
 .height-almost-full_comp {
   height: 10%;
