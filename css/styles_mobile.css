@@ -107,6 +107,11 @@
   nav#menu .button{
     display: none;
   }
+
+  .display-flex {
+    flex-direction: column-reverse;
+  }
+
   .columna{
     width: 100% !important;
     display: block;
